@@ -5,8 +5,8 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-Player1 = 猫
-Player2 = 犬
+Player1 = "猫"
+Player2 = "犬"
 
 @bot.event
 async def on_command_error(ctx, error):
