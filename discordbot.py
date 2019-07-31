@@ -40,10 +40,10 @@ async def start(ctx):
     
 @bot.command()
 async def play(ctx,arg):
-    if count == 0
+    if count == 0:
         Player1 = arg
         await ctx.send('プレイヤー2の手番です。カードを出してください')
-    else if count ==1
+    else if count ==1:
         Player2 = arg
         await ctx.send(Player1)
         await ctx.send(Player2)
