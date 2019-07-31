@@ -17,6 +17,12 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
+    
+@bot.command(name="こんにちは")
+async def hello(ctx):
+    await ctx.send(f"どうも、{ctx.message.author.name}さん！")
+
+    
 @bot.command()
 async def rule(ctx):
     await ctx.send('プレイヤー１は「女勇者」か「村人（赤）」「村人（緑）」「村人（青）」を出せます。')
@@ -31,7 +37,7 @@ async def reset(ctx):
     await ctx.send('リセットしました')
     
 @bot.command()
-async def 女勇者(ctx):
+async def test(ctx):
     Player1 = "女勇者"
     await message.channel.send(Player1)
     await ctx.send('リセットしました')
