@@ -5,8 +5,8 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-Player1 = None
-Player2 = None
+Player1 = 猫
+Player2 = 犬
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -39,8 +39,8 @@ async def reset(ctx):
 @bot.command()
 async def test(ctx):
     Player1 = "女勇者"
-    await message.channel.send(Player1)
-    await ctx.send('リセットしました')
+    await ctx.send(Player1)
+    await ctx.send('設定しました')
 
 
 bot.run(token)
