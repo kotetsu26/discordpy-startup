@@ -42,8 +42,9 @@ async def start(ctx):
 async def play(ctx,arg):
     if count == 0:
         Player1 = arg
+        count = 1
         await ctx.send('プレイヤー2の手番です。カードを出してください')
-    else if count ==1:
+    elif count == 1:
         Player2 = arg
         await ctx.send(Player1)
         await ctx.send(Player2)
