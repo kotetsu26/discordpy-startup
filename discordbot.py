@@ -5,6 +5,8 @@ import traceback
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
+Player1 = None
+Player2 = None
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -22,6 +24,7 @@ async def rule(ctx):
     
 @bot.command()
 async def on_message(message):
+    await ctx.send('ユルサナイ')
     if client.user in message.mentions: # 話しかけられたかの判定
         reply = f'{message.author.mention} 呼んだ？' # 返信メッセージの作成
         await message.channel.send(reply) # 返信メッセージを送信
