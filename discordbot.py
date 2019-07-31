@@ -18,7 +18,7 @@ async def ping(ctx):
     await ctx.send('pong')
 
 @bot.command()
-async def rule(ctx):
+async def ||rule||(ctx):
     await ctx.send('||女勇者||')
     await ctx.send('||村人(赤)||')
     
